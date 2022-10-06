@@ -1,0 +1,193 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+
+:root {
+  --Pale-blue: hsl(225, 100%, 94%);
+  --Bright-blue: hsl(245, 75%, 52%);
+  --Very-pale-blue: hsl(225, 100%, 98%);
+  --Desaturated-blue: hsl(224, 23%, 55%);
+  --Dark-blue: hsl(223, 47%, 23%);
+  --font: "Red Hat Display", sans-serif;
+  --border-radius: 15px;
+  --transition: all 0.3s linear;
+}
+
+/*******
+ Global
+ *******/
+
+body {
+  position: relative;
+  font-family: var(--font);
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.bg-clr {
+  height: 100vh;
+  background: var(--Pale-blue);
+}
+
+.bg-image {
+  width: 100%;
+}
+
+/*******
+Main image
+ *******/
+
+.main-con {
+  width: 320px;
+  max-width: 70vw;
+  background: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 15px;
+}
+
+.main-img {
+  width: 100%;
+  display: block;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+/*******
+Info
+ *******/
+
+.main-info {
+  width: 250px;
+  margin: auto;
+  margin-top: 23px;
+
+  text-align: center;
+}
+@media screen and (max-width: 400px) {
+  .main-info {
+    width: 230px;
+  }
+}
+
+h1 {
+  font-size: 1.2rem;
+  font-weight: 900;
+  margin-bottom: 15px;
+  columns: var(--Dark-blue);
+}
+
+p {
+  font-size: 0.9rem;
+  font-weight: 500;
+  line-height: 1.5;
+  color: var(--Desaturated-blue);
+  letter-spacing: 0.3px;
+}
+
+@media screen and (max-width: 400px) {
+  p {
+    font-size: 0.8rem;
+    letter-spacing: 0.3px;
+  }
+}
+
+/*******
+Order
+ *******/
+
+.order {
+  display: flex;
+  justify-content: space-between;
+  background: var(--Very-pale-blue);
+  margin-top: 20px;
+  height: 60px;
+  align-items: center;
+  padding: 15px;
+  height: 70px;
+  border-radius: var(--border-radius);
+}
+
+.price {
+  display: flex;
+}
+
+.music-img {
+  width: 40px;
+  height: 40px;
+}
+
+.plan-price {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+h3 {
+  font-size: 0.8rem;
+  margin-left: 13px;
+}
+
+.plan {
+  color: var(--Dark-blue);
+  margin-bottom: 2px;
+  font-weight: 900;
+}
+
+.price {
+  color: var(--Desaturated-blue);
+}
+
+.link {
+  font-size: 0.8rem;
+  font-weight: 900;
+  color: var(--Bright-blue);
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.link:hover {
+  opacity: 0.7;
+  text-decoration: transparent;
+}
+
+/*******
+Payment and cancelletion
+ *******/
+
+.btn {
+  width: 100%;
+  padding: 13px;
+  background: var(--Bright-blue);
+  border-radius: 10px;
+  margin-top: 20px;
+  color: white;
+  text-transform: capitalize;
+  font-weight: 700;
+  font-size: 0.8rem;
+  transition: var(--transition);
+  cursor: pointer;
+  border: none;
+  box-shadow: 0 20px 10px 0 #e1dcfa;
+}
+
+.btn:hover {
+  opacity: 0.7;
+}
+
+.cancel {
+  margin-top: 22px;
+  margin-bottom: 25px;
+  text-transform: capitalize;
+  font-size: 0.8rem;
+  color: var(--Desaturated-blue);
+  transition: var(--transition);
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.cancel:hover {
+  color: var(--Dark-blue);
+}
